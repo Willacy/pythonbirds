@@ -5,7 +5,6 @@ from tkinter.constants import ALL
 import math
 from os import path
 import atores
-
 from fase import Fase, EM_ANDAMENTO, VITORIA
 from atores import PassaroVermelho, PassaroAmarelo, Porco, Obstaculo
 
