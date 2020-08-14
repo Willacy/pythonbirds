@@ -1,6 +1,8 @@
 # Criando a Classe Pessoa
 class Pessoa:
-    def __init__(self, *filhos,nome=None, idade=35):
+    olhos = 2
+
+    def __init__(self, *filhos, nome=None, idade=35):
         self.idade = idade
         self.nome = nome
         self.filhos = list(filhos)
