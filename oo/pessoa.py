@@ -10,6 +10,14 @@ class Pessoa:
     def cumprimentar(self):
         return f'{id(self)}'
 
+    @staticmethod
+    def metodo_estatico():
+        return 42
+
+    @classmethod
+    def nome_e_atrubutos_de_classe(cls):
+        return f'{cls} - olhos {cls.olhos}'
+
 
 if __name__ == '__main__':
     renzo = Pessoa(nome='Renzo')
@@ -21,3 +29,5 @@ if __name__ == '__main__':
     print(willacy.idade)
     for filho in willacy.filhos:
         print(filho.nome)
+    print(Pessoa.metodo_estatico())
+    print(willacy.metodo_estatico())
